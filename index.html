@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/feather-icons/4.28.0/feather.js" integrity="sha512-oFCsbxZP/K+0EjvkyIHBvC3ft8LZnO+8kljz0RiJN8ffUCeX0LF1G0WlvU3jMJVaoKBrC+I2ohi4BCpKq2ZgXw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <title>Vuexy - Vuejs Admin Dashboard Template</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+
+<body>
+
+    <div class="buy-now"><a class="buy-btn" href="#">Buy Now</a></div>
+    <div class="layout">
+
+<!-- Leftside -->
+        <div class="left">
+<span id="logo"><img style="max-width: 36px;" src="https://pixinvent.com/demo/vuexy-vuejs-admin-dashboard-template/demo-1/img/logo.36f34a9f.svg" alt="logo"><h2>Vuexy</h2></span>
+<span id="dashboard"><i class="feather-20" data-feather="home"></i><a>  Dashboards</a></span>
+<div class="sec"><h5>APPS & PAGES</h5>
+    <ul>
+        <li><i class="feather-20" data-feather="mail"></i><a href="#"> Email </a></li>
+        <li><i class="feather-20" data-feather="message-square"></i><a href="#"> Chat</a></li>
+        <li><i class="feather-20" data-feather="check-square"></i><a href="#"> Todo</a></li>
+        <li><i class="feather-20" data-feather="calendar"></i><a href="#">  Calendar</a></li>
+        <li><i class="feather-20" data-feather="file-text"></i><a href="#"> Invoice</a></li> <!--add drop-->
+        <li><i class="feather-20" data-feather="shopping-cart"></i><a href="#">  eCommerce</a></li><!--add drop-->
+        <li><i class="feather-20" data-feather="user"></i><a href="#">  User</a></li><!--add drop-->
+        <li><i class="feather-20" data-feather="file"></i><a href="#">  Pages</a></li><!--add drop--></ul></div>
+
+<div class="sec"><h5>USER INTERFACE</h5>
+    <ul>
+        <li><i class="feather-20" data-feather="type"></i><a href="#"> Typography</a></li>
+        <li><i class="feather-20" data-feather="droplet"></i><a href="#">  Colors</a></li>
+        <li><i class="feather-20" data-feather="eye"></i><a href="#">  Feather</a></li>
+        <li><i class="feather-20" data-feather="credit-card"></i><a href="#"> Cards</a></li> <!--add drop-->
+        <li><i class="feather-20" data-feather="archive"></i><a href="#"> Components</a></li><!--add drop-->
+        <li><i class="feather-20" data-feather="plus-circle"></i><a href="#"> Extentions</a></li><!--add drop-->
+        <li><i class="feather-20" data-feather="layout"></i><a href="#"> Page Layouts</a></li><!--add drop-->
+       </ul></div>
+
+<div class="sec"><h5>FORMS & TABLES</h5>
+    <ul>
+        <li><i class="feather-20" data-feather="copy"></i><a href="#"> Forms elements </a></li><!--add drop-->
+        <li><i class="feather-20" data-feather="copy"></i> <a href="#">Form Layout</a></li>
+        <li><i class="feather-20" data-feather="package"></i><a href="#">Form Wizard</a></li>
+        <li><i  class="feather-20" data-feather="check-circle"></i> <a href="#">Form Validation</a></li>
+        <li><i class="feather-20" data-feather="copy"></i><a href="#"> Form Repeater</a></li>
+        <li><i class="feather-20" data-feather="server"></i><a href="#">BS Table</a></li>
+        <li><i class="feather-20" data-feather="grid"></i><a href="#"> Good Table</a></li></ul></div>
+
+<div class="sec"><h5>CHARTS & MAPS</h5>
+    <ul>
+        <li><i data-feather="pie-chart"></i><a href="#"> Charts</a></li><!--add drop-->
+        <li><i data-feather="map"></i><a href="#"> Leaflet</a></li></ul></div>
+
+<div class="sec"><h5>OTHERS</h5>
+    <ul>
+        <li><i class="feather-20" data-feather="shield"></i><a href="#"> Access Control</a></li>
+        <li><i class="feather-20" data-feather="menu"></i><a href="#">Menu Levels</a></li><!--add drop-->
+        <li style="text-decoration: line-through;"><i class="feather-20" data-feather="eye-off"></i><a style="color: lightgray;" href="#"> Disabeled Menu</a></li> <!-- disable-->
+        <li><i class="feather-20" data-feather="life-buoy"></i><a href="#"> Raise Support</a></li>
+        <li><i class="feather-20" data-feather="file-text"></i><a href="#"> Documentation</a></li></ul>
+</div>
+        </div>
+<!-- Rightside -->
+        <div class="right">
+<div class="nav">
+    <ul>
+<li><i class="feather-20" data-feather="calendar"></i></li>
+<li><i class="feather-20" data-feather="message-square"></i></li>
+<li><i class="feather-20" data-feather="mail"></i></li>
+<li><i class="feather-20" data-feather="check-square"></i></li>
+<li><i class="feather-20" id="yellow" data-feather="star"></i></li>
+    </ul>
+
+    <ul class="second-n">
+        <li>English</li>
+        <li onclick="DarkMode()"><i class="feather-20" data-feather="moon"></i></li>
+        <li><i class="feather-20" data-feather="search"></i></li>
+        <li><i class="feather-20" data-feather="shopping-cart"></i><span class="badge">5</span></li>
+        <li><i class="feather-20" data-feather="bell"></i><span id="red" class="badge">6</span></li>
+        <li><span ><div id="name"><span id="username">John Doe</span><span id="role">admin</span></div><a onclick="ShowList()" href="#"><img src="/13-small.d796bffd.png" alt="user"></a></li></span> <!--Add image and drop-->
+
+    </ul>
+</div>
+
+<div  class="drop-down">
+    <ul><li><i class="feather-16" data-feather="user"></i><a href="#">Profile</a></li>
+        <li><i class="feather-16" data-feather="mail"></i><a href="#">Index</a></li>
+        <li><i class="feather-16" data-feather="check-square" ></i><a href="#">Task</a></li>
+        <li><i class="feather-16" data-feather="message-square"></i><a href="#">Chat</a></li>
+        <hr>
+        <li><i class="feather-16" data-feather="settings"></i><a href="#">Settings</a></li>
+        <li><i class="feather-16" data-feather="credit-card"></i><a href="#">Pricing</a></li>
+        <li><i class="feather-16" data-feather="help-circle"></i><a href="#">FAQ</a></li>
+        <li><i class="feather-16" data-feather="log-out"></i><a href="#">Logout</a></li>
+        
+    </ul>
+</div>
+
+<div class="path">
+    <span id="shop">Shop  </span>
+    
+    <a href="#"><i id="purple" class="feather-16" data-feather="home"></i></a>
+   <i data-feather="chevron-right" class="feather-16"></i> 
+    <a id="plink" href="#">ECommerce</a>
+    <i data-feather="chevron-right" class="feather-16"></i> 
+    <span>Shop</span>
+    <!-- <button>help</button> -->
+
+
+</div>
+
+<div class="result">
+    <h4 id="one">Filters</h4>
+    <h4 id="two" >27 results found</h4>
+    <div class="view">
+       
+    <span class="merge"><button id="border"><i class="feather-purple" data-feather="grid" class="feather-16"></i></button>
+        <button><i class="feather-purple" data-feather="list" class="feather-16" ></i></button></span></div>
+    </div>
+
+<div class="container">
+    <div class="filters">
+    
+        <div class="category"><h5>Multi Range</h5>
+            <ul><li> <input type="radio" name="multirange" id="all" onclick="All()" >
+                <label for="all">All</label></li>
+
+                <li> <input type="radio" name="multirange" id="10" >
+                    <label for="10"><= $10</label></li>
+
+                    <li> <input type="radio" name="multirange" id="100" onclick="Filter1()" >
+                        <label for="100">$10 - $100</label></li>
+
+                        <li> <input type="radio" name="multirange" id="500" onclick="Filter2()" >
+                            <label for="500">$100 - $500</label></li>
+
+                            <li> <input type="radio" name="multirange" id=">500" onclick="Filter3()" >
+                                <label for=">500">>= $500</label></li>  </ul>
+    
+        </div>
+        <div class="category"><h5>Price Range</h5>
+        <input type="range" min="0" max="100"></div>
+
+        <div class="category"><h5>Categories</h5>
+
+            <ul><li> <input type="radio" name="categories" id="Appliances" >
+                <label for="Appliances">Appliances</label></li>
+
+                <li> <input type="radio" name="categories" id="Audio" >
+                    <label for="Audio">Audio</label></li>
+
+                    <li> <input type="radio" name="categories" id="Cameras & Camcorders" >
+                        <label for="Cameras & Camcorders">Cameras & Camcorders</label></li>
+
+                        <li> <input type="radio" name="categories" id="Car Electronics & GPS" >
+                            <label for="Car Electronics & GPS">Car Electronics & GPS</label></li>
+
+                            <li> <input type="radio" name="categories" id="Cell Phones" >
+                                <label for="Cell Phones">Cell Phones</label></li> 
+                                <li> <input type="radio" name="categories" id="Computers & Tablets" >
+                                    <label for="Computers & Tablets">Computers & Tablets</label></li>
+
+                                    <li> <input type="radio" name="categories" id="Health, Fitness & Beauty" >
+                                        <label for="Health, Fitness & Beauty">Health, Fitness & Beauty</label></li>
+
+                                        <li> <input type="radio" name="categories" id="Office & School Supplies" >
+                                            <label for="Office & School Supplies">Office & School Supplies</label></li>
+
+                                            <li> <input type="radio" name="categories" id="TV & Home Theater" >
+                                                <label for="TV & Home Theater">TV & Home Theater</label></li>
+
+                                                <li><input type="radio" name="categories" id="Video Games" >
+                                                    <label for="Video Games">Video Games</label></li></ul>
+        </div>
+
+        <div class="category"><h5>Brands</h5>
+            <ul><li> <input type="radio" name="brands" id="Insignia™" >
+                <label for="Insignia™">Insignia™</label></li>
+    <li> <input type="radio" name="brands" id="Samsung" >
+                    <label for="Samsung">Samsung</label></li>
+
+    <li> <input type="radio" name="brands" id="Metra" >
+        <label for="Metra">Metra</label></li>
+
+        <li> <input type="radio" name="brands" id="HP" >
+                            <label for="HP">HP</label></li>
+
+        <li> <input type="radio" name="brands" id="Apple" >
+                                <label for="Apple">Apple</label></li> 
+            <li> <input type="radio" name="brands" id="GE" >
+                                    <label for="GE">GE</label></li>
+
+                <li> <input type="radio" name="brands" id="Sony" >
+                                        <label for="Sony">Sony</label></li>
+
+                    <li> <input type="radio" name="brands" id="Incipio" >
+                                            <label for="Incipio">Incipio</label></li>
+
+                    <li> <input type="radio" name="brands" id="KitchenAid" >
+                                                <label for="KitchenAid">KitchenAid</label></li>
+
+                            <li><input type="radio" name="brands" id="Whirlpool" >
+                                                    <label for="Whirlpool">Whirlpool</label></li></ul>
+        </div>
+        <div class="category"><h5>Ratings</h5>
+            <div><span class="star-space"><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><a class="star-link" href="#">& up</a><span class="count">160</span></div>
+            <div><span class="star-space"><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><a class="star-link" href="#">& up</a><span class="count">176</span></div>
+            <div><span class="star-space"><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty" class="feather-16"></i><i data-feather="star" class="feather-empty" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><a class="star-link" href="#">& up</a><span class="count">291</span></div>
+            <div><span class="star-space"><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty" class="feather-16"></i><i data-feather="star" class="feather-empty" class="feather-16"></i><i data-feather="star" class="feather-empty" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><a class="star-link" href="#">& up</a><span class="count">190</span></div>
+            
+        </div>
+    </div>
+  
+  <!-- searchbar -->
+    <div class="product-search">
+        <div class="search"><input onkeyup="search()" placeholder="Search Product" type="text" name="search" id="search"></div>
+<!-- products -->
+        <div class="products">
+<div class="card">
+    <img src="photo-1512054502232-10a0a035d672.avif" alt="product">
+    <div class="rate" ><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!</p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a href="">Wishlist</a></div>
+    <div class="pbtn2"><i class="feather-shop" data-feather="shopping-cart" ></i><a href="">View In Cart</a></div>
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate"><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+   <div class="pbtn1"><i data-feather="heart" class="feather-16"></i> <a href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a href="">View In Cart</a></div>
+   
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate"><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a  href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a  href="">View In Cart</a></div>
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate"><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a  href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a href="">View In Cart</a></div>
+    
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate"><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a  href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a  href="">View In Cart</a></div>
+    
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate"><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i> <a  href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a  href="">View In Cart</a></div>
+   
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate" ><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a href="">View In Cart</a></div>
+    
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate" ><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-shop"></i><a href="">View In Cart</a></div>
+    
+    
+</div>
+<div class="card">
+    <img src="#" alt="product">
+    <div class="rate"><span><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-16"></i><i data-feather="star" class="feather-empty"></i></span><span class="price">$<span></span></span></div>
+    <a href="#">link</a>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat iste nisi numquam rem corrupti accusamus, veniam officiis mollitia aliquid ipsam quis corporis beatae voluptatem ratione voluptates! Incidunt, odit quo quisquam dolorum maiores blanditiis quibusdam voluptate expedita ut animi, natus officia dolor voluptatem sint dolores! Quia aliquid quaerat officia quos soluta!
+    </p>
+    <div class="pbtn1"><i data-feather="heart" class="feather-16"></i><a  href="">Wishlist</a></div>
+    <div class="pbtn2"><i data-feather="shopping-cart" class="feather-16"></i><a  href="">View In Cart</a></div>
+    
+    
+</div>
+</div>
+        </div>
+    </div>
+        </div>
+        
+    </div>
+
+    <div class="footer"> <p>COPYRIGHT © 2022 <span><a href="#">Pixinvent</a></span>, All rights Reserved </p><span class="last">Hand-crafted & Made with <i data-feather="heart"  class="feather-red"></i> </span></div>
+   
+</body>
+</html>
