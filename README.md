@@ -1,4 +1,4 @@
-#  Algoriza internship tasl (Dashboard)
+#  Algoriza internship task (Dashboard)
 
 Sample page from an admin dashboard website
 
